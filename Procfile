@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT app_heroku:app_heroku
+web: gunicorn app:app --log-file -
