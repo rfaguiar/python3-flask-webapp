@@ -1,7 +1,14 @@
 from flask import Flask
-app = Flask(__name__)
+from flask_mysqldb import MySQL
 
-@app.route('/')
+app = Flask(__name__)
+app.config.from_pyfile('config.py')
+db = MySQL(app)
+
+
+from views import *
+
+@app.route('/hello')
 def hello_world():
     return 'Hello World 2!'
 
