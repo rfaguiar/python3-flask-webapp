@@ -9,5 +9,12 @@ MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD')
 MYSQL_DB = os.environ.get('MYSQL_DB')
 MYSQL_PORT = int(os.environ.get('MYSQL_PORT'))
 
+print(MYSQL_HOST)
+print(MYSQL_USER)
+print(MYSQL_PASSWORD)
+print(MYSQL_DB)
+print(MYSQL_PORT)
+
+
 SECRET_KEY = "secret_jogoteca"
 UPLOAD_PATH = os.path.dirname(os.path.abspath(__file__)) + '/uploads'
